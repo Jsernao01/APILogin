@@ -21,7 +21,7 @@ public class Personaje {
 
     public Personaje(Integer id, String name, Integer cantidadVida, Integer poderDefensa, String fotografia, LocalDate fechaCreacion) {
         this.id = id;
-        this.name = this.name;
+        this.name = name;
         this.cantidadVida = cantidadVida;
         this.poderDefensa = poderDefensa;
         this.fotografia = fotografia;
@@ -41,7 +41,7 @@ public class Personaje {
     }
 
     public void setName(String name) {
-        this.name = this.name;
+        this.name = name;
     }
 
     public Integer getCantidadVida() {
