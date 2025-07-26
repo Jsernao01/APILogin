@@ -12,20 +12,26 @@ public class Personaje {
     private Integer id;
     private String name;
     private Integer cantidadVida;
+    private Integer poderAtaque;
     private Integer poderDefensa;
     private String fotografia;
     private LocalDate fechaCreacion;
+    private String categoriaPersonaje;
+    private boolean SigueVivo;
 
     public Personaje() {
     }
 
-    public Personaje(Integer id, String name, Integer cantidadVida, Integer poderDefensa, String fotografia, LocalDate fechaCreacion) {
+    public Personaje(Integer id, String name, Integer cantidadVida, Integer poderAtaque, Integer poderDefensa, String fotografia, LocalDate fechaCreacion, String categoriaPersonaje, boolean sigueVivo) {
         this.id = id;
         this.name = name;
         this.cantidadVida = cantidadVida;
+        this.poderAtaque = poderAtaque;
         this.poderDefensa = poderDefensa;
         this.fotografia = fotografia;
         this.fechaCreacion = fechaCreacion;
+        this.categoriaPersonaje = categoriaPersonaje;
+        SigueVivo = sigueVivo;
     }
 
     public Integer getId() {
@@ -74,5 +80,29 @@ public class Personaje {
 
     public void setFechaCreacion(LocalDate fechaCreacion) {
         this.fechaCreacion = fechaCreacion;
+    }
+
+    public Integer getPoderAtaque() {
+        return poderAtaque;
+    }
+
+    public void setPoderAtaque(Integer poderAtaque) {
+        this.poderAtaque = poderAtaque;
+    }
+
+    public String getCategoriaPersonaje() {
+        return categoriaPersonaje;
+    }
+
+    public void setCategoriaPersonaje(String categoriaPersonaje) {
+        this.categoriaPersonaje = categoriaPersonaje;
+    }
+
+    public boolean isSigueVivo() {
+        return SigueVivo;
+    }
+
+    public void setSigueVivo(boolean sigueVivo) {
+        SigueVivo = sigueVivo;
     }
 }
